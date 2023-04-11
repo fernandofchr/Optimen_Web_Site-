@@ -1,0 +1,97 @@
+{
+    "Autor": "Abraham Salvador Espinoza Gómez"
+    ,
+
+    "menu.home": "Inicio",
+    "menu.aboutUs": "Acerca de",
+    "menu.customers": "Clientes",
+    "menu.news": "Noticias",
+    "menu.contactUs": "Contacto",
+
+    "app.welcome": "Bienvenido a Optimen",
+    "app.Description": "Equipo único de expertos en gestión y optimización de recursos y apasionados desarrolladores de software.",
+
+    "Home.innovation": "Innovación",
+
+    "Carru.text": "Asociaciones y afiliaciones",
+
+    "Certi.text": "Premios y Certificaciones",
+
+    "footer.enla": "Enlaces útiles",
+    "footer.poli": "Política de privacidad",
+    "footer.cont": "Contacto",
+    "footer.sig": "Síguenos",
+    "footer.derechos": "© 2023 Optimen SA de CV. Todos los derechos reservados...",
+
+
+    "vall.mis": "MISION",
+    "vall.miste": "Apoyar y facilitar que las líneas aéreas de todo el mundo mantengan",
+    "vall.miste2": " operaciones confiables y sostenibles a través de la tecnología,",
+    "vall.miste 3": "la innovación y la vivencia de nuestros valores.",
+
+    "vall.vis": "VISION",
+    "vall.viste": "Ser la Primera opción en Software, Tecnología",
+    "vall.viste2":"y servicios de innovación para las aerolíneas globales en",
+    "vall.viste3": "el área de control operacional Aeronáutico.",
+
+
+    "vall.val": "VALORES",
+    "vall.valte": "Confiable",
+    "vall.valte2": "Respeto",
+    "vall.valte3": "Integridad",
+    "vall.valte4": "Trabajo en equipo",
+    "vall.valte5": "Apoyo a la innovación",
+
+
+    "vall.aireEspe": "Experiencia en aerolíneas",
+    "vall.aireEspe1": "Asociado con larga experiencia en la Industria Aérea con alta confianza y estrecha relación con líneas aéreas comerciales y ",
+    "vall.aireEspe2": "jugadores clave de la industria.",
+
+    "vall.airaso": "Amplia experiencia en desarrollo de software en Sistemas de Control Operacional de Aerolíneas reales e implementación de Software de Optimización.",
+
+    "vall.airsor": "Sólida gestión de proyectos siguiendo las mejores prácticas de la industria.",
+
+
+
+    "home.ser": "Nuestros servicios",
+
+    "home.aud": "REVISIÓN DE CUENTAS",
+    "home.aud1":"Auditoría y mejora de procesos.",
+
+    "home.con": "CONSULTORÍA.",
+    "home.con1": "Servicios de consultoria.",
+
+    "home.imp": "EXTERNALIZACIÓN DE IMPLEMENTACIÓN",
+    "home.imp1": "Implementar sistemas y optimizadores de seguimiento de aeronaves y tripulaciones",
+
+
+    "home.int": "DESARROLLO DE INTERFACES",
+    "home.int1": "Desarrollo de Integraciones / Interfaces para sistemas informáticos",
+
+
+    "home.inn": "INNOVACIÓN",
+    "home.inn1": "Innovación y Desarrollo de nuevos sistemas",
+
+
+    "home.bus": "DESARROLLO DE REGLAS DE NEGOCIO",
+    "home.bus1": "Desarrollo de reglas de negocio para la gestión de recursos.",
+
+    "cont.nam": "Nombre",
+    "cont.ema": "Correo Electronico",
+    "cont.pho": "Telefono",
+    "cont.sub": "Asunto",
+    "cont.sub.inf": "Información",
+    "cont.sub.ser": "Servicios",
+
+    "cont.mes": "Mensaje",
+
+    "cont.alet.cap": "Por favor acepta el captcha",
+
+    "cont.subm": "Enviar",
+
+    "custo.our": "Nuestros Clientes",
+    "custo.ourTex": "A través de nuestras capacidades, los servicios que brindamos y nuestro compromiso, implementamos proyectos que resultan en clientes satisfechos y casos de éxito.",
+    "custo.ourPro": "Nuestra Experiencia en Proyectos",
+    "custo.ourPro.tex": "A través de nuestra experiencia como consultores certificados de Jeppesen/Boeing, contribuimos al soporte de la configuración y personalización de software de optimización de última generación para varias aerolíneas clave en el sector aeronáutico a nivel internacional."
+
+}

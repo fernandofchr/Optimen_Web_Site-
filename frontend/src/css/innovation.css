@@ -1,0 +1,98 @@
+.boxesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+
+.cardBoxs {
+  background-color: #20274c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+  perspective: 800px;
+  transition: all 0.3s ease 0s;
+  width: calc(23.7% - 1%);
+}
+
+@media (max-width: 1200px) {
+  .cardBoxs {
+    width: calc(31.7% - 1%);
+  }
+}
+
+@media (max-width: 992px) {
+  .cardBoxs {
+    width: calc(48% - 1%);
+  }
+}
+
+@media (max-width: 576px) {
+  .cardBoxs {
+    width: 100%;
+  }
+}
+
+.cardBoxs:hover .card-inno {
+  transform: rotateY(180deg);
+}
+
+.card-inno {
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease 0s;
+}
+
+.card-inno .front-inno,
+.card-inno .back-inno {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+.card-inno .front-inno {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-inno .front-inno img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.card-inno .back-inno {
+  transform: rotateY(180deg);
+}
+
+.card-inno .back-inno p {
+  margin-bottom: 20px;
+}
+
+.card-inno .back-inno a {
+  background: #ebe5e5;
+  border-radius: 20px;
+  color: #20274c;
+  font-size: 0.9em;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+}
+
+.card-inno .back-inno a:hover {
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #20274c;
+  text-shadow: 0 0 1px white;
+}

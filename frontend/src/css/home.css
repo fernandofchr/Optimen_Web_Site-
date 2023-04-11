@@ -1,0 +1,52 @@
+.home-header {
+  position: relative;
+}
+
+.home-image {
+  width: 100%;
+}
+
+.home-content {
+  position: absolute;
+  top: 100px;
+  left: 90px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home-description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.home-title {
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+.home-description {
+  transform: translateY(50px);
+  animation: slide-up 1s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

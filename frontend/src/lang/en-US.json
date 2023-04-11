@@ -1,0 +1,99 @@
+{
+    "Autor": "Abraham Salvador Espinoza Gómez"
+    ,
+
+    
+    "menu.home": "Home",
+    "menu.aboutUs": "About-Us",
+    "menu.customers": "Customers",
+    "menu.news": "News",
+    "menu.contactUs": "Contact-Us",
+
+    "app.welcome": "Welcome to Optimen",
+    "app.Description": "Unique team of Resources Management and Optimization Experts and passionate Software Developers.",
+
+    "Home.innovation": "Innovation",
+
+    "Carru.text": "Partnerships and Affiliations",
+
+    "Certi.text": "Awards and Certifications",
+
+    "footer.enla": "Helpful Links",
+    "footer.poli": "Privacy Policy",
+    "footer.cont": "Contact",
+    "footer.sig": "follow us",
+    "footer.derechos": "© 2023 Optimen SA de CV. All rights reserved...",
+
+    "vall.mis": "MISSION",
+    "vall.miste": "Support and facilitate Air Lines around the world to maintain",
+    "vall.miste2": " reliable and sustainable operations through Technology,",
+    "vall.mister3": "Innovation and living our Values.",
+
+
+    "vall.vis": "VISION",
+    "vall.viste": "To be the First option in Software, Technology",
+    "vall.viste2":"and Innovation services for the global Airlines in",
+    "vall.viste3": "the area of Aeronautical operational control.",
+
+    
+    "vall.val": "VALUES",
+    "vall.valte": "Trustworthy",
+    "vall.valte2": "Respect",
+    "vall.valte3": "Integrity",
+    "vall.valte4": "Integrity",
+    "vall.valte5": "InnovationSupport",
+
+
+    "vall.aireEspe": "Airline Experience",
+    "vall.aireEspe1": "Associated with long experience in the Airline Industry with high trust and tight relation with commercial airlines and  ",
+    "vall.aireEspe2": " industry key players.",
+
+    "vall.airaso": "Associated with long experience in the Airline Industry with high trust and tight relation with commercial airlines and industry key players.",
+
+    "vall.airsor": "Strong Project Management following the industry best practices.",
+
+    "home.ser": "Our Services",
+
+    "home.aud": "AUDITING",
+    "home.aud1":"Auditing and process improvement.",
+
+    "home.con": "CONSULTANCY",
+    "home.con1": "Consultancy Services.",
+
+    "home.imp": "IMPLEMENTATION OUTSOURCING",
+    "home.imp1": "Implement Aircraft and Crew Tracking Systems and Optimizers.",
+
+
+    "home.int": "INTERFACES DEVELOPMENT",
+    "home.int1": "Development of Integrations / Interfaces for computer systems.",
+
+
+    "home.inn": "INNOVATION",
+    "home.inn1": "Innovation and Development of new systems",
+
+
+    "home.bus": "BUSINESS RULES DEVELOPMENT",
+    "home.bus1": "Development of business rules for resource management",
+
+
+    "cont.nam": "Name",
+    "cont.ema": "Email",
+    "cont.pho": "Phone",
+    "cont.sub": "Subject",
+    "cont.sub.inf": "Information",
+    "cont.sub.ser": "Services",
+
+    "cont.mes": "Message",
+
+    "cont.alet.cap": "Please accept the captcha",
+
+    "cont.subm": "Submit",
+
+    "custo.our": "Our Customers",
+    "custo.ourTex": "Through our capabilities, the services we provide, and our commitment, we implement projects resulting in satisfied clients and success stories.",
+    "custo.ourPro": "Our Project Experience",
+    "custo.ourPro.tex": "Through our experience as certified Jeppesen/Boeing consultants, we contribute to the support of the configuration and customization of state-of-the-art optimization software for several key airlines in the aeronautical sector at an international level."
+
+}
+
+

@@ -1,0 +1,104 @@
+.slider .slider-track {
+  display: flex;
+  animation: scroll 45s linear infinite;
+  -webkit-animation: scroll 45s linear infinite;
+  width: calc(
+    180px * 10
+  ); /* cambiar 240px por 180px para ajustar el tamaño de las imágenes /
+  overflow: hidden; / ocultar el desbordamiento de las imágenes */
+}
+
+.slider .slide {
+  display: flex;
+  flex: 0 0 auto; /* ajustar el tamaño de las imágenes */
+}
+
+.slider .slide img {
+  width: 180px;
+  height: 80px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 20px; /* agregar un margen horizontal de 20px para separar las imágenes */
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-180px * 10)
+    ); /* cambiar -240px por -180px para ajustar el tamaño de las imágenes */
+  }
+}
+
+.slider {
+  background-color: transparent;
+  overflow: auto;
+}
+
+.slide img {
+  filter: grayscale(100%); /* escala de grises por defecto */
+  transition: filter 0.5s ease-in-out; /* animación de transición */
+}
+
+.slide:hover img {
+  filter: grayscale(
+    0%
+  ); /* quita la escala de grises al poner el mouse encima */
+}
+
+.slider .slider-track {
+  display: flex;
+  width: calc(
+    240px * 20
+  ); /* ancho suficiente para que se puedan recorrer infinitamente /
+  animation: slide 20s linear infinite; / animación de movimiento infinito */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* para que el primer elemento salga y entre el último elemento */
+  }
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slide-track {
+  /*animation: scroll 50s linear infinite;*/
+  display:flex;
+  width: calc(250px * 20);
+  overflow: hidden;
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+}
+
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carrusel-title {
+  text-align: center;
+}

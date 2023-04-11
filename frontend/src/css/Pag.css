@@ -1,0 +1,61 @@
+
+.App-link {
+  color: #000000;
+  background-color: transparent;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  padding-top: 50px;
+}
+
+.textio {
+  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  display: flex;
+  contain: layout;
+}
+
+/* Estilos para el cuerpo del documento */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos para el título "Our Customers" */
+.titulo-Custom {
+  color: #003366;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+/* Estilos para el texto de descripción */
+.textio {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.textio h3 {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* Estilos para los componentes Customer y Customs */
+.Customer, .Customs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.customs{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}

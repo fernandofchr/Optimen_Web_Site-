@@ -1,0 +1,65 @@
+/* Este bloque de código define las propiedades CSS de los elementos que tengan la clase "row". */
+.row{
+  height: 255px;
+  width: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.titulo-Custom{
+text-align: center;
+}
+
+.img{
+  margin:0px auto;
+  border-radius:255px;
+  border: 1px solid #999;
+  padding:5px;
+  width:200px;
+  height:200px;
+  background-size: 250px 300px;
+  background-repeat:no-repeat;
+  background-size: cover;
+  
+  }
+.img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 255px;
+}
+@media all and (min-width: 500px) and (max-width: 1000px)
+{  
+
+}
+.img img{
+   width:100%;
+}
+
+
+section.sec{
+  height: 350px;
+}
+Button.but{
+  border-radius: 255px;
+  background-color: red;
+}
+
+/* Establecer el contenedor de las imágenes como un flexbox con flex-wrap: wrap */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  }
+  
+  /* Establecer el ancho de las imágenes según el ancho del contenedor de la imagen */
+  .img {
+  width: 100%;
+  max-width: 200px; /* o cualquier otro ancho que quieras establecer */
+  margin: 0 auto;
+  }
+  
+  /* Ajustar el tamaño de las imágenes para evitar empalmes */
+  @media all and (max-width: 1000px) {
+  .img {
+  max-width: 150px; /* ajusta este valor según tus necesidades */
+  }
+  }

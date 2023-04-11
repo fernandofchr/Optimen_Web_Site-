@@ -1,0 +1,38 @@
+.certifications-container {
+  background-color: #3159cf;
+  padding: 1.5rem;
+  border-bottom: 3px solid #3159cf;
+  text-align: center;
+}
+
+.certifications-title {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.certifications-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+}
+
+.certification-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+

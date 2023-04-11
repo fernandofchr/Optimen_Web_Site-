@@ -1,0 +1,42 @@
+.card-container {
+  display:flex;
+  justify-content: center;
+  position:center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: .5rem;
+}
+
+
+
+#cardServ {
+  width: 316px;
+  height: 275px;
+  margin: 10px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.services-center{
+  color: #080808;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.card-title1 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #000000;
+ 
+}
+
+.card-text1 {
+  font-size: 15px;
+  margin-bottom: 2px;
+ color: #000000;
+ 
+}
