@@ -1,6 +1,6 @@
 //Codigo echo por fernando
 
-import Proyectos from '../models/Events';
+import Proyectos from '../models/Events.js';
 
 // Encontrar todos los proyectos
 export const findAllProyectos= async(req,res)=>{

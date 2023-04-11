@@ -1,6 +1,6 @@
 // codigo echo por fernando
 
-import Users from '../models/Users'
+import Users from '../models/Users.js'
 
 // Encuentra todos los usuarios
 export const findAllUsers= async(req,res)=>{

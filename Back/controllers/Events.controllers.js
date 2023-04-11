@@ -1,6 +1,6 @@
 //Codigo echo por fernando
 
-import Tasks from '../models/News'; // Importa el modelo de tareas desde el archivo "../models/News".
+import Tasks from '../models/News.js'; // Importa el modelo de tareas desde el archivo "../models/News".
 
 // Esta función se utiliza para buscar todas las tareas en la base de datos.
 export const findAllTasks= async(req,res)=>{
