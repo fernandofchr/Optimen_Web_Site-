@@ -13,9 +13,9 @@ const Innovation = () => { // Define el componente Innovation como una función 
 
   useEffect(() => { // Utiliza el hook useEffect para hacer una solicitud a la API cuando se monta el componente
     axios
-      .get("http://localhost:4000/admin/api/resources/Events/actions/list") // Hace una solicitud GET a la API
+      .get("http://localhost:4000/events") // Hace una solicitud GET a la API
       .then((response) => { // Si la solicitud es exitosa, actualiza el estado de los eventos
-        setEvents(response.data.records);
+        setEvents(response.data);
       })
       .catch((error) => console.log(error.message)); // Si la solicitud falla, imprime un mensaje de error en la consola
   }, []); // Este efecto se ejecutará solo una vez, cuando se monte el componente
@@ -24,23 +24,25 @@ const Innovation = () => { // Define el componente Innovation como una función 
     <div className=''>
         <h1 className='services-center' ><FormattedMessage id="Home.innovation" defaultMessage="Innovation"/></h1> 
       <div className="boxesContainer">
-        {events.map((card) => ( // Mapea la matriz de eventos y muestra cada evento en una "caja"
-          <div className="cardBoxs" key={card.params.id}>
+        {events?.map((card) => (
+          
+          <div className="cardBoxs" key={card.id}>
             <div className="card-inno">
               <div className="front-inno">
-                <h2>{card.params.evento}</h2> 
-                <img src={card.params.imagen} alt={card.params.imagen} width="200" height="150"/> 
+                <h2>{card.evento}</h2> 
+                <img src={card.imagen} alt={card.imagen} width="200" height="150"/> 
               </div>
               <div className="back-inno">
-                <h2>{card.params.evento}</h2>
-                <h6>{card.params.descripcion}</h6>
-                <h6>{card.params.ubicacion}</h6>
-                <h6>{card.params.fechaEvento}</h6>
-                <h6>{card.params.horaEvento}</h6>
+                <h2>{card.evento}</h2>
+                <h6>{card.descripcion}</h6>
+                <h6>{card.ubicacion}</h6>
+                <h6>{card.fechaEvento}</h6>
+                <h6>{card.horaEvento}</h6>
               </div>
             </div>
           </div>
-        ))}
+      
+        ))};
       </div>
     </div>
   );

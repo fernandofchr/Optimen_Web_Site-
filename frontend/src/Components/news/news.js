@@ -1,6 +1,4 @@
 //Echo por Fernando Arvizu Sotelo
-
-
 // Este componente se encarga de mostrar una lista de noticias obtenidas desde una API, utilizando el framework de React.
 import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card"; // Se importa el componente Card de react-bootstrap
@@ -13,9 +11,9 @@ const News = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:4000/admin/api/resources/News/actions/list") // Se realiza una solicitud GET a la API para obtener una lista de noticias
+      .get("http://localhost:4000/news") // Se realiza una solicitud GET a la API para obtener una lista de noticias
       .then((response) => {
-        setNews(response.data.records); // Se actualiza el estado 'news' con la lista de noticias obtenidas de la API
+        setNews(response.data); // Se actualiza el estado 'news' con la lista de noticias obtenidas de la API
       })
       .catch((error) => console.log(error.message)); // En caso de error, se muestra un mensaje en la consola del navegador
   }, []);
@@ -23,18 +21,18 @@ const News = () => {
   return (
     <div className="news-container">
 
-      {news.map((record) => (
+      {news?.map((record) => (
         <>
           <Card className="bg-dark text-white">
-            <Card.Img src={record.params.imagen} alt={record.params.titulo} />
+            <Card.Img src={record.imagen} alt={record.titulo} />
             <Card.ImgOverlay>
-              <Card.Title>{record.params.titulo}</Card.Title>
-              <Card.Text>{record.params.descripcion}</Card.Text>
+              <Card.Title>{record.titulo}</Card.Title>
+              <Card.Text>{record.descripcion}</Card.Text>
               <Card.Text>
                 Fecha del suceso :
-                {moment(record.params.createdAt).format("MMM Do YYYY")}
+                {moment(record.createdAt).format("MMM Do YYYY")}
               </Card.Text>
-              <Card.Text>Autor :{record.params.autor}</Card.Text>
+              <Card.Text>Autor :{record.autor}</Card.Text>
             </Card.ImgOverlay>
           </Card>
         </>

@@ -1,6 +1,7 @@
 //Esquema de base de datos para Usuarios
 //Fernando Arvizu Sotelo
 import { Schema, model } from "mongoose";
+import bcrypt from "bcrypt";
 
 const userSchema = new Schema(
   {
@@ -28,7 +29,7 @@ const userSchema = new Schema(
     role: 
     { 
       type: String,
-      enum: ['admin', 'creator'],
+      enum: ['admin', 'creator','root'],
       require: true
     },
   },{
@@ -36,5 +37,8 @@ const userSchema = new Schema(
     versionKey: false
   }
 );
+
+
+
 
 export default model('User', userSchema);

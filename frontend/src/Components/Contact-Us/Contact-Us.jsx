@@ -15,25 +15,51 @@ const ContactForm = () => {
   const [subject, setSubject] = useState("Information"); // Definimos el estado para el tema del mensaje del usuario, con un valor inicial de "Information"
   const [message, setMessage] = useState(""); // Definimos el estado para el mensaje del usuario
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // Evitamos que el formulario se envíe automáticamente
-
-    // Verificamos si el usuario ha completado el ReCAPTCHA
-    if (captcha.current.getValue()) {
-      console.log("El usuario Pasó la prueba"); // Imprimimos un mensaje en la consola para confirmar que el usuario ha pasado la prueba
-      cambiarCaptchaValido(true); // Cambiamos el estado para confirmar que el usuario ha pasado la prueba
-
-      // Imprimimos en la consola los valores del formulario que ha completado el usuario
-      console.log(
-        `Name: ${name}, Email: ${email}, Phone: ${phone}, Subject: ${subject}, Message: ${message}`
-      );
-    } else {
-      console.log("Por favor acepta el captcha"); // Si el usuario no ha completado el ReCAPTCHA, le pedimos que lo haga
-      cambiarCaptchaValido(false); // Cambiamos el estado para confirmar que el usuario no ha pasado la prueba
+  const sendFormData = async (formData) => {
+    try {
+      const response = await fetch("http://localhost:4000/message", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json",
+        },
+      });
+  
+      if (response.ok) {
+        const result = await response.json();
+        console.log("Formulario enviado correctamente:", result);
+      } else {
+        console.error("Error al enviar el formulario:", response.statusText);
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
     }
-
-    // Aquí puedes añadir el código para enviar el formulario
   };
+  
+
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  if (captcha.current.getValue()) {
+    console.log("El usuario Pasó la prueba");
+    cambiarCaptchaValido(true);
+
+    const formData = {
+      name,
+      email,
+      phone,
+      subject,
+      message,
+    };
+
+    sendFormData(formData);
+  } else {
+    console.log("Por favor acepta el captcha");
+    cambiarCaptchaValido(false);
+  }
+};
+
 
   const captcha = useRef(null); // Creamos una referencia a nuestro componente de ReCAPTCHA
 
